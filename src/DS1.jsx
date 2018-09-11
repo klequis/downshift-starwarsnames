@@ -30,7 +30,7 @@ class DS1 extends React.Component {
               const { isOpen, getMenuProps, getInputProps, getLabelProps, getItemProps, highlightedIndex, selectedItem } = downshift
               return (
                 <div className={classes.container}>
-                  <label {...getLabelProps()}>Postal Code</label>
+                  <label {...getLabelProps()}>Character Name</label>
                   {
                     renderInput({
                       fullWidth: true,
