@@ -1,11 +1,14 @@
 {
-  "name": "01downshift",
+  "name": "downshift-starwarsnames",
   "version": "0.1.0",
   "private": true,
+  "author": "klequis <klequis@gmail.com> (http://trivalleycoders.org)",
+  "license": "MIT",
   "keywords": [
     "material-ui",
     "downshift",
     "react",
+    "reactjs",
     "redux"
   ],
   "proxy": "http://localhost:3030",
