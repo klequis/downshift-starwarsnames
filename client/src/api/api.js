@@ -1,4 +1,4 @@
-// import fetchPostalCodes from './fetchPostalCodes'
+import fetchPostalCodes from './fetchPostalCodes'
 
 
 /* Dev */
@@ -18,6 +18,16 @@ export default {
       )
       // pink('starwarsNames: data', data.data)
       return data.data
+    }
+  },
+  postalCodes: {
+    read: async (searchString) => {
+      const a = await fetchPostalCodes(searchString)
+      // pink('a', a)
+      if (a === undefined) {
+        return []
+      }
+      return a
     }
   },
 }

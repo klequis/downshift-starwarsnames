@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
 import { merge } from 'ramda'
 import { reducer as formReducer } from 'redux-form'
+import { postalCodes } from './location-reducers'
 
 import {
   starwarsNamesReadKey,
@@ -39,5 +40,6 @@ const requests = (state = {}, { type, payload, meta }) => {
 export default combineReducers({
   starwarsNames,
   requests,
+  postalCodes,
   form: formReducer,
 })

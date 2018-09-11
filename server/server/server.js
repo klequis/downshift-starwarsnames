@@ -6,11 +6,6 @@ import 'babel-polyfill'
 
 
 import { greenf, redf, yellow } from '../logger'
-import users from '../routes/user-route'
-import events from '../routes/events-route'
-import images from '../routes/image-route'
-import search from '../routes/search-route'
-import location from '../routes/location-route'
 import starwars from '../routes/starwars-route'
 
 const app = express()
@@ -26,20 +21,11 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(morgan('dev'))
 
 require('../config/passport')
-app.use('/', users)
-app.use('/events', events)
-app.use('/images', images)
-app.use('/search', search)
-app.use('/location', location)
 app.use('/starwars', starwars)
 app.get('/', (req, res) => {
   redf('Invalid endpoint!')
   res.send('Invalid endpoint!')
 })
-
-// app.listen(port, () => {
-//   greenf('server started - ', port)
-// })
 
 if (!module.parent) {
   app.listen(port, () => {

@@ -17,6 +17,7 @@
     "@material-ui/icons": "^3.0.1",
     "downshift": "^2.2.2",
     "keycode": "^2.2.0",
+    "p-debounce": "^1.0.0",
     "ramda": "^0.25.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
