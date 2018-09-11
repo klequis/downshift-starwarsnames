@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import DS1 from './DS1'
+import StarwarsForm from './StarwarsForm'
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
 
           <h1 className="App-title">Downshift Star Wars Characters</h1>
         </header>
-        <DS1/>
+        <StarwarsForm />
       </div>
     );
   }

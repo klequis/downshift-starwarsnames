@@ -1,5 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { compose } from 'recompose'
+import { reduxForm, Field } from 'redux-form'
 import Downshift from 'downshift'
 import { getStarwarsNames } from './store/selectors'
 import * as actions from './store/actions'
@@ -97,4 +99,11 @@ const styles = theme => ({
   },
 })
 
-export default connect(mapStateToProps, actions)(withStyles(styles)(DS1))
+
+export default compose(
+  withStyles(styles),
+  connect(mapStateToProps, actions),
+  reduxForm({
+    form: 'StarwarsForm',
+  })
+)(DS1)
