@@ -2,6 +2,12 @@
   "name": "01downshift",
   "version": "0.1.0",
   "private": true,
+  "keywords": [
+    "material-ui",
+    "downshift",
+    "react",
+    "redux"
+  ],
   "proxy": "http://localhost:3030",
   "dependencies": {
     "@material-ui/core": "^3.0.3",
