@@ -9,7 +9,7 @@ import { greenf, redf, yellow } from '../logger'
 import starwars from '../routes/starwars-route'
 
 const app = express()
-const port = process.env.PORT
+const port = 3030
 
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').load()

@@ -1,17 +1,16 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
-import { reduxForm, Field } from 'redux-form'
 import Downshift from 'downshift'
-import { getStarwarsNames } from './store/selectors'
-import * as actions from './store/actions'
+import { getStarwarsNames } from '../../store/selectors'
+import * as actions from '../../store/actions'
 import {
   Paper,
 } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
-import { renderInput, renderSuggestion } from './ds1-helpers'
+import { renderInput, renderSuggestion } from './dsmui-helpers'
 
-class DS1 extends React.Component {
+class DSMUI extends React.Component {
   onInputValueChange = (inputValue, state) => {
     if (!(inputValue === '')) {
       this.props.starwarsNamesReadRequest(inputValue)
@@ -103,7 +102,4 @@ const styles = theme => ({
 export default compose(
   withStyles(styles),
   connect(mapStateToProps, actions),
-  reduxForm({
-    form: 'StarwarsForm',
-  })
-)(DS1)
+)(DSMUI)

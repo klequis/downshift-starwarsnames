@@ -2,14 +2,14 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import Downshift from 'downshift'
-import { getStarwarsNames } from '../store/selectors'
-import * as actions from '../store/actions'
+import { getStarwarsNames } from '../../store/selectors'
+import * as actions from '../../store/actions'
 import {
   Paper,
 } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
-import { renderInput, renderSuggestion } from './ds2-helpers'
-import { green } from '../logger'
+import { renderInput, renderSuggestion } from './dsmuiredux-helpers'
+import { green } from '../../logger'
 
 class DS2Redux extends React.Component {
   onInputValueChange = (inputValue, state) => {

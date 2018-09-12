@@ -2,14 +2,16 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import Downshift from 'downshift'
-import { getPostalCodes } from '../store/location-selectors'
-import * as locationActions from '../store/location-actions'
+import { getPostalCodes } from '../../store/location-selectors'
+import * as locationActions from '../../store/location-actions'
 import {
   Paper,
 } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import { renderInput, renderSuggestion } from './postal-codes-helpers'
-import { green, red } from '../logger'
+
+// eslint-disable-next-line
+import { green, red } from '../../logger'
 
 class PostalCodesRedux extends React.Component {
   onInputValueChange = (inputValue, state) => {

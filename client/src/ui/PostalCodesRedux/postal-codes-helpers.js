@@ -3,7 +3,7 @@ import {
   MenuItem,
   TextField,
 } from '@material-ui/core'
-import { green } from '../logger';
+import { green } from '../../logger';
 
 export const renderInput = (inputProps) => {
   green('inputProps', inputProps.InputProps.value)

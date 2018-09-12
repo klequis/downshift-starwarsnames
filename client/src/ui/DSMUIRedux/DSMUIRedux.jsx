@@ -1,6 +1,6 @@
 import React from 'react'
 import { Field } from 'redux-form'
-import DS2Component from './DS2Component'
+import DS2Component from './DSMUIComponent'
 import { FormControl } from '@material-ui/core'
 
 
